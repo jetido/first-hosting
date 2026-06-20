@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CR7 AIRDROP</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #0b0f1a;
+        color: white;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 8%;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #00f7ff;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        margin-left: 25px;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #00f7ff;
+      }
+
+      /* Hero */
+      .hero {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 50px;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1400&q=80");
+        background-size: cover;
+      }
+
+      .hero-content h1 {
+        font-size: 70px;
+        margin-bottom: 20px;
+      }
+
+      .hero-content span {
+        color: #00f7ff;
+      }
+
+      .hero-content p {
+        max-width: 700px;
+        margin: auto;
+        font-size: 18px;
+        color: #ccc;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 15px 40px;
+        background: #00f7ff;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 25px #00f7ff;
+      }
+
+      /* Stats */
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 70px 8%;
+      }
+
+      .card {
+        background: #131b2d;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+      }
+
+      .card h2 {
+        color: #00f7ff;
+        margin-bottom: 10px;
+      }
+
+      /* About */
+      .about {
+        padding: 80px 8%;
+        text-align: center;
+      }
+
+      .about h2 {
+        margin-bottom: 20px;
+        font-size: 40px;
+      }
+
+      .about p {
+        color: #ccc;
+        max-width: 800px;
+        margin: auto;
+        line-height: 1.8;
+      }
+
+      /* Steps */
+      .steps {
+        padding: 80px 8%;
+      }
+
+      .steps h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 40px;
+      }
+
+      .step-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+
+      .step {
+        background: #131b2d;
+        padding: 30px;
+        border-radius: 15px;
+      }
+
+      .step h3 {
+        color: #00f7ff;
+        margin-bottom: 15px;
+      }
+
+      /* Countdown */
+      .countdown {
+        text-align: center;
+        padding: 80px 20px;
+        background: linear-gradient(45deg, #00f7ff, #005eff);
+      }
+
+      .countdown h2 {
+        font-size: 45px;
+        margin-bottom: 20px;
+      }
+
+      .timer {
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      /* Form */
+      .form-section {
+        padding: 80px 8%;
+        text-align: center;
+      }
+
+      form {
+        max-width: 500px;
+        margin: auto;
+      }
+
+      input {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 10px;
+      }
+
+      button {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        background: #00f7ff;
+        color: black;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        box-shadow: 0 0 20px #00f7ff;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 30px;
+        background: #05070f;
+        color: #999;
+      }
+
+      @media (max-width: 768px) {
+        .hero-content h1 {
+          font-size: 45px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">CR7 AIRDROP</div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Token</a>
+        <a href="#">Roadmap</a>
+        <a href="#">Join</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Claim Your <span>CR7 Token</span> Airdrop</h1>
+
+        <p>
+          Join the next generation crypto community inspired by greatness.
+          Complete simple tasks and earn free CR7 tokens before launch.
+        </p>
+
+        <a href="#" class="btn">Claim Airdrop</a>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="card">
+        <h2>500M</h2>
+        <p>Total Supply</p>
+      </div>
+
+      <div class="card">
+        <h2>50M</h2>
+        <p>Airdrop Allocation</p>
+      </div>
+
+      <div class="card">
+        <h2>250K+</h2>
+        <p>Participants</p>
+      </div>
+
+      <div class="card">
+        <h2>2026</h2>
+        <p>Main Launch</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About CR7 Token</h2>
+
+      <p>
+        CR7 Token is a community-driven digital asset built for fans, traders,
+        and believers in the future of decentralized finance. The mission is to
+        unite sports, blockchain, and global communities into one powerful
+        ecosystem.
+      </p>
+    </section>
+
+    <section class="steps">
+      <h2>How To Participate</h2>
+
+      <div class="step-grid">
+        <div class="step">
+          <h3>01. Connect Wallet</h3>
+          <p>Connect your preferred crypto wallet.</p>
+        </div>
+
+        <div class="step">
+          <h3>02. Complete Tasks</h3>
+          <p>Follow social channels and invite friends.</p>
+        </div>
+
+        <div class="step">
+          <h3>03. Earn Points</h3>
+          <p>Receive points based on completed activities.</p>
+        </div>
+
+        <div class="step">
+          <h3>04. Claim Tokens</h3>
+          <p>Claim CR7 tokens on launch day.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown">
+      <h2>Airdrop Ends In</h2>
+
+      <div class="timer" id="timer">30 : 00 : 00</div>
+    </section>
+
+    <section class="form-section">
+      <h2>Join The Airdrop</h2>
+
+      <form>
+        <input type="text" placeholder="Full Name" />
+        <input type="email" placeholder="Email Address" />
+        <input type="text" placeholder="Wallet Address" />
+        <button type="submit">Register Now</button>
+      </form>
+    </section>
+
+    <footer>© 2026 CR7 Token. All Rights Reserved.</footer>
+  </body>
+</html>
